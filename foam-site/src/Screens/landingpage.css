@@ -1,0 +1,147 @@
+* {
+    overflow: auto;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+.banner {
+    display: flex;
+    height: 30vw;
+    min-height: 50vh;
+    background-image: url(../Images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@-webkit-keyframes button-gradiant {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes button-gradiant {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@keyframes button-gradiant {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+
+.start-button {
+    height: fit-content;
+    width: fit-content;
+    -webkit-animation: button-gradiant 20s ease infinite;
+    -moz-animation: button-gradiant 20s ease infinite;
+    animation: button-gradiant 20s ease infinite;
+    background: linear-gradient(229deg, #246656a6, #311f8e94, #8e1f5e88, #20a5ce80);
+    background-size: 800% 800%;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    padding: 10px;
+    padding-top: 6px;
+    font-size: 32px;
+    transition: 3s ease;
+}
+
+.start-button:hover {
+    height: fit-content;
+    width: fit-content;
+    -webkit-animation: button-gradiant 20s ease infinite;
+    -moz-animation: button-gradiant 20s ease infinite;
+    animation: button-gradiant 20s ease infinite;
+    background: linear-gradient(229deg, #246656c6, #311f8eb0, #8e1f5eaf, #20a5ceaf);
+    background-size: 800% 800%;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    padding: 10px;
+    padding-top: 6px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 3s ease;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+.info-container h3 {
+    font-size: 24px;
+    width: 20vw;
+}
+.info-container p {
+    font-size: 24px;
+    width: 20vw;
+}
+
+.text2 {
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .info-container {
+        display: flex;
+        margin-top: 300px;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+    .info-container div{
+        margin-top: 50px;
+    }
+    .info-container h3 {
+        text-align: center;
+        font-size: 24px;
+        width: 80vw;
+    }
+    .info-container p {
+        font-size: 24px;
+        width: 80vw;
+    }
+
+    .start-button {
+        height: fit-content;
+        width: fit-content;
+        -webkit-animation: button-gradiant 20s ease infinite;
+        -moz-animation: button-gradiant 20s ease infinite;
+        animation: button-gradiant 20s ease infinite;
+        background: linear-gradient(229deg, #246656a6, #311f8e94, #8e1f5e88, #20a5ce80);
+        background-size: 800% 800%;
+        box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+        padding: 10px;
+        padding-top: 6px;
+        font-size: 28px;
+        transition: 3s ease;
+        margin-top: 35px;
+    }
+    
+    .start-button:hover {
+        height: fit-content;
+        width: fit-content;
+        -webkit-animation: button-gradiant 20s ease infinite;
+        -moz-animation: button-gradiant 20s ease infinite;
+        animation: button-gradiant 20s ease infinite;
+        background: linear-gradient(229deg, #246656c6, #311f8eb0, #8e1f5eaf, #20a5ceaf);
+        background-size: 800% 800%;
+        box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+        padding: 10px;
+        padding-top: 6px;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 3s ease;
+        margin-top: 35px;
+    }
+}
