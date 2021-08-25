@@ -25,11 +25,39 @@
     align-items: center;
 }
 
-.cart-icon {
+.button-container h2 {
     color: white;
-    width: 50px;
-    height: 50px;
+    margin-left: 8rem;
+    font-size: 26px;
+    opacity: 80%;
 }
+
+.button-container h2:hover {
+    color: white;
+    margin-left: 8rem;
+    font-size: 26px;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.mobile-button-container {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    height: 10vh;
+    min-height: 80px;
+    align-items: center;
+}
+
+.mobile-button-container h2 {
+    color: white;
+    margin-right: 25px;
+    font-size: 48px;
+    opacity: 100%;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
     .logo-image {
@@ -51,10 +79,25 @@
     .button-container {
         display: flex;
         flex-direction: row;
-        margin-right: 25px;
+        float: right;
         height: 10vh;
-        min-height: 20px;
+        min-height: 80px;
         align-items: center;
+    }
+    
+    .button-container h2 {
+        color: white;
+        margin-left: 8rem;
+        font-size: 26px;
+        opacity: 80%;
+    }
+    
+    .button-container h2:hover {
+        color: white;
+        margin-left: 8rem;
+        font-size: 26px;
+        opacity: 100%;
+        cursor: pointer;
     }
 
 }

@@ -80,6 +80,11 @@
     font-size: 24px;
     width: 20vw;
 }
+
+.info-container h2 {
+    font-weight: bolder;
+}
+
 .info-container p {
     font-size: 24px;
     width: 20vw;
@@ -88,6 +93,7 @@
 .text2 {
     margin-top: 100px;
 }
+
 
 @media only screen and (max-width: 500px) {
     .info-container {

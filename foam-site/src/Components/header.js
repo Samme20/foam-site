@@ -1,18 +1,35 @@
 import React from "react";
-import './header.css';
-import { BiCart } from "react-icons/bi";
+import "./header.css";
+import { IoIosHome, IoMdCart, IoIosBulb, IoMdApps } from "react-icons/io";
+import { BrowserView, MobileView } from "react-device-detect";
 
-function Header(){
+import logoText from "../Images/logoText.png";
 
-    return  (
+function Header() {
+  return (
     <div className="header">
-        <img className="logo-image" src="https://cdn.discordapp.com/attachments/538464909055229972/782681716980187156/logo.png" alt="Tinderest Logo" />
+      <img className="logo-image" src={logoText} alt="Foam.io Logo" />
 
-         <div className="button-container">
-            <p className="cart-icon"><BiCart size="m"/> </p>
-         </div>   
+      <BrowserView>
+        <div className="button-container">
+          <h2>
+            <IoIosHome /> Home
+          </h2>
+          <h2>
+            <IoIosBulb /> About
+          </h2>
+          <h2>
+            <IoMdCart /> Shop
+          </h2>
+        </div>
+      </BrowserView>
+      <MobileView>
+      <div className="mobile-button-container">
+        <h2 className="burger-menu"><IoMdApps /></h2>
+        </div>
+      </MobileView>
     </div>
-    )
+  );
 }
 
 export default Header;
