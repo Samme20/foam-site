@@ -9,7 +9,7 @@ import Foam from './dbFoamInfo.js';
 const app = express();
 const port = process.env.PORT || 8080;
 
-const connection_url = 'mongodb+srv://home:Salemalfa1@foam-data.cib27.mongodb.net/foam-site?retryWrites=true&w=majority'
+const connection_url = 'mongo URL'
 
 // Middlewares
 app.use(express.json());
@@ -32,8 +32,8 @@ app.get('/post', (req, res) => res.status(200).send('test'));
 app.post("/foam", (req, res) => {
     const dbFoamInfo = req.body;
 
-    Foam.create(dbFoamInfo, (err, data) => {    
-        if(err) res.status(500).send(err.message);     
+    Foam.create(dbFoamInfo, (err, data) => {
+        if (err) res.status(500).send(err.message);
         else res.status(201).send(data);
     })
 });
@@ -42,8 +42,8 @@ app.post("/foam", (req, res) => {
 //Recieve
 //GET CARDS
 app.get('/foam', (req, res) => {
-    Foam.find((err, data) => {    
-        if(err) res.status(500).send(err);     
+    Foam.find((err, data) => {
+        if (err) res.status(500).send(err);
         else res.status(200).send(data);
     })
 });
